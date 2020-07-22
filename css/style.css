@@ -212,7 +212,7 @@ nav{
 }
 .footer-content .links .link i{
     cursor: pointer;
-    color: #e0dede;
+    color: #959494;
     font-size: 30px !important;
 }
 
@@ -234,7 +234,7 @@ nav{
     font-size: 10px;
 }
 @keyframes color2 {
-    100%{color: #075ac2;}
+    100%{color: #ffffff;}
 
 }
 
