@@ -5,29 +5,38 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    background-image: url("img/seventh.jpg");
+    background-image: url("../img/seventh.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-
 }
 button{
     font-family: 'Poppins', sans-serif, '';
 }
-.main-container{
-    position: relative;
+header{
+    position: fixed;
     display: flex;
-    width: 90%;
-    margin: auto;
+    width: 100%;
     align-items: center;
     z-index: 1;
+    height: 10vh;
+}
+header.blue{
+    width: 100%;
+    margin: auto;
+    animation: header-color 1s forwards;
+}
+@keyframes header-color {
+    100%{background-color: #222222;
+    }
 }
 .logo, .nav-links{
     display: flex;
 }
 .logo img{
-    height: 15vh;
+    padding-left: 5%;
+    height: 8vh;
     max-width: 400px;
 }
 nav{
@@ -52,8 +61,8 @@ nav{
     border-bottom: 1px solid white;
 }
 .sec-container{
-    height: 90vh;
-    width: 90%;
+    height: 100vh;
+    width: 92%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -65,8 +74,19 @@ nav{
     grid-row: 3;
 }
 .introduction{
+    padding: 10px 10px;
     background-color: rgba(5,5,5, 0.5);
     color: white;
+    cursor: pointer;
+}
+.introduction:hover{
+    background-color: rgba(5,5,5, 0.8);
+    animation: jump2 0.7s ease;
+}
+@keyframes jump2 {
+    0%{transform: translateY(0px)}
+    50%{transform: translateY(-20px)}
+    100%{transform: translateY(0px)}
 }
 .cta button{
     height: 60px;
@@ -83,7 +103,7 @@ nav{
     100%{transform: translateY(0px); opacity: 1}
 }
 @keyframes color {
-    100%{background-color: #68c4de; border: 1px solid #68c4de}
+    100%{background-color: #d4cece; border: 1px solid #d4cece ;border-radius: 0}
 }
 .image-grid{
     height: 100vh;
@@ -92,29 +112,43 @@ nav{
     grid-template-rows: repeat(2, 1fr);
 }
 .first-image{
-    background-image: url("img/second.jpg");
+    background-image: url("../img/second.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     //background-attachment: fixed;
     background-size: cover;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    transition: filter .5s ease-in-out;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
 }
 .second-image{
-    background-image: url("img/eighth (1).jpg");
+    background-image: url("../img/eighth (1).jpg");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    transition: filter .5s ease-in-out;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
 }
 .third-image {
-    background-image: url("img/third.jpg");
+    background-image: url("../img/third.jpg");
     background-position:bottom;
     background-repeat: no-repeat;
     background-size: cover;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    transition: filter .5s ease-in-out;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+.first-image:hover, .second-image:hover, .third-image:hover{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+
 }
 .first-image{
     display: grid;
@@ -132,19 +166,15 @@ nav{
     align-self: center;
 }
 .grid-info-first, .grid-info-second, .grid-info-third{
+    padding: 10px 10px;
     background-color: rgba(5,5,5,0.5);
     color: white;
-}
-.grid-info-first button, .grid-info-third button{
-    height: 40px;
-    width: 80px;
-    background-color: white;
-    border-radius: 25px;
-    border: 10px solid white;
     cursor: pointer;
 }
-.grid-info-first button:hover, .grid-info-second button:hover, .grid-info-third button:hover{
-    animation: color 1s forwards;
+.grid-info-first:hover, .grid-info-second:hover, .grid-info-third:hover{
+    background-color: rgba(5,5,5, 0.8);
+    animation: jump2 0.7s ease;
+    
 }
 .second-image, .third-image{
     display: grid;
@@ -161,56 +191,38 @@ nav{
     grid-column: 1 / 2;
     grid-row: 2/ 3;
 }
-
-.grid-info-second button{
-    height: 60px;
-    width: 120px;
-    border: 1px solid white;
-    border-radius: 25px;
-    cursor: pointer;
-}
 .main-footer{
-    height: 25vh;
+    bottom: 5%;
     width: 100%;
-    background-color: #ffffff;
-}
-.footer-content{
-    display: flex;
-    width: 80%;
-    margin: auto;
-    align-items: center;
-    justify-content: space-between;
-}
-.footer-logo img{
-    height: 20vh;
-    max-width: 500px;
+    background-color: #222222;
 }
 .links{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
     list-style: none;
-    color: grey;
+    color: #e0dede;
 }
 .link{
-    padding: 5%;
+    padding: 0.7%;
 }
-.footer-media h1, .contact h1{
-    color: grey;
+.footer-media h1{
+    color: #5c5b5b;
 }
-.contact .links .link  i{
+.footer-content .links .link i{
     cursor: pointer;
+    color: #e0dede;
+    font-size: 30px !important;
 }
-.contact .links .link  i:hover{
-    animation: color2 1s forwards;
-}
-.footer-media .links .link a i{
-    cursor: pointer;
-    color: grey;
-}
-.footer-media .links .link a i:hover{
+
+.footer-content .links .link  i:hover{
     animation: color2 1s forwards;
 }
 .copyright{
     height: 5vh;
-    background-color: #cbcaca;
+    border-top: 1px solid #5c5b5b;
+    background-color: #222222;
     bottom: 0;
     display: flex;
     align-items: center;
@@ -222,7 +234,7 @@ nav{
     font-size: 10px;
 }
 @keyframes color2 {
-    100%{color: black}
+    100%{color: #075ac2;}
 
 }
 
