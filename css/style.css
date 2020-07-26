@@ -28,8 +28,7 @@ header.blue{
     animation: header-color 1s forwards;
 }
 @keyframes header-color {
-    100%{background-color: #222222;
-    }
+    100%{background-color: #222222;}
 }
 .logo, .nav-links{
     display: flex;
@@ -40,7 +39,7 @@ header.blue{
     max-width: 400px;
 }
 nav{
-    flex: 1;
+    flex: 2;
 }
 .logo{
     flex: 3;
@@ -57,6 +56,26 @@ nav{
     color: #ffffff;
 
 }
+.nav-link{
+    position: relative;
+}
+.nav-link ul{
+    //margin-top: 3vh;
+    position: absolute;
+    list-style: none;
+    //background-color: #222222;
+    width: 300px;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+
+}
+nav ul li:hover > ul{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
 .nav-link a:hover{
     border-bottom: 1px solid white;
 }
@@ -70,7 +89,7 @@ nav{
     animation: jump 1.5s ease;
 }
 .presentation{
-    font-size: 30px;
+    font-size: 25px;
     grid-row: 3;
 }
 .introduction{
@@ -87,16 +106,6 @@ nav{
     0%{transform: translateY(0px)}
     50%{transform: translateY(-20px)}
     100%{transform: translateY(0px)}
-}
-.cta button{
-    height: 60px;
-    width: 120px;
-    border-radius: 25px;
-    border: 1px solid white;
-    cursor: pointer;
-}
-.cta button:hover{
-    animation: color 0.7s forwards;
 }
 @keyframes jump {
     0%{transform: translateY(20px); opacity: 0}
