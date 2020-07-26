@@ -47,3 +47,18 @@ const closeModal = modal =>{
     modal.classList.remove('active')
     overlay.classList.remove('active')
 }
+//pop1
+const e = document.getElementById('popupBoxOnePosition');
+const close = document.getElementById('closebox1');
+
+document.getElementById('box1').addEventListener('click', function(){
+    if(e.style.display === 'block')
+        e.style.display = 'none';
+    else
+        e.style.display = 'block';
+});
+
+// When the user clicks on Click here to close modal
+close.onclick = function() {
+    e.style.display = "none";
+}

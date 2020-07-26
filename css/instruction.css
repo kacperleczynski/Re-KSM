@@ -25,7 +25,7 @@
 .instruction-main .cards .card{
     height: 300px;
     width: 300px;
-    background-color: white;
+    background-color: #21c7f1;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -35,13 +35,14 @@
     animation: drop 1.5s ease;
 }
 .instruction-main .cards .card:hover{
-    background-color: #999999;
+    transition: background-color 0.5s ease-in-out;
+    background-color: #078eb1;
     color: white;
 }
 .instruction-main .cards .card h2 a{
     font-size: 24px;
     text-decoration: none;
-    color: #222222;
+    color: white;
 }
 .instruction-main .cards .card h2 a:hover:before{
     content: '\f061';
@@ -64,12 +65,18 @@
 }
 .instruction-text, .instruction-text-two{
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     margin-right: auto;
-    background-color: rgba(5,5,5, 0.5);
+    background-color: #21c7f1;
     font-size: 50px;
     text-align: center;
     opacity: 1;
+    color: white;
+    margin-top: 20px;
+}
+.instruction-content h3, .instruction-content-two h3{
+    padding-top: 5px;
+    color: #444444;
 }
 .instruction-content, .instruction-content-two{
     width: 80%;
@@ -80,7 +87,7 @@
 .instruction-link{
     color: black;
     font-size: 26px;
-    background-color: rgba(0,0,0, 0.3);
+    //background-color: white;
 }
 .modal-button{
     background-color: #959494;
@@ -155,9 +162,14 @@
     margin-left: 10px;
 }
 .instruction-content-two h3 a, .instruction-content h3 a{
+    font-size: 20px;
     text-decoration: none;
     color: #5c5b5b;
 }
+.instruction-content h3 .card{
+    color: #21c7f1;
+}
+
 .instruction-content-two h3 a:hover:before, .instruction-content h3 a:hover:before{
     content: '\f061';
     font-family: FontAwesome;
@@ -165,4 +177,31 @@
 }
 .instruction-content-two h3 a:hover, .instruction-content h3 a:hover{
     color: #222222;
+}
+#popupBoxOnePosition{
+    top: 0; left: 0; position: fixed; width: 100%; height: 120%;
+    background-color: rgba(0,0,0,0.7); display: none;
+}
+#popupBoxTwoPosition{
+    top: 0; left: 0; position: fixed; width: 100%; height: 120%;
+    background-color: rgba(0,0,0,0.7); display: none;
+}
+.popupBoxWrapper{
+    width: 700px; margin: 50px auto; text-align: left;
+}
+.popupBoxContent{
+    background-color: #FFF; padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.popupBoxContent img{
+    width: 500px;
+    height: 500px;
+}
+.popupBoxContent button{
+    background-color: #5c5b5b;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    color: white;
 }

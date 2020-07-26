@@ -77,7 +77,8 @@
             serwisie Youtube.</h3><br>
         <h3>Rejestracja dla sędziów jest dostępna tylko dla osób posiadających kod dostępu.</h3><br>
         <h3>Debaty odbywają się w formacie 1 vs 1 i są oceniane przez jednego sędziego z Krakowskiego Stowarzyszenia
-            Mówców, według karty oceny</h3><br>
+            Mówców, według karty oceny</h3>
+        <br>
         <h3>Debaty odbywają się przy użyciu platformy LiveWebinar. Zaproszenie do udziału w wideokonferencji otrzymują
             mailowo jedynie mówcy biorący udział w debacie. Publiczność może dołączyć do trwającej debaty klikając w
             link do transmisji w zakładce „Debaty”</h3><br>
@@ -86,6 +87,11 @@
             nie są w żaden sposób wykorzystywane poza stroną Zadebatuj.pl</h3><br>
         <h3>Poniżej znajduje się regulamin korzystania ze strony i zapisy dotyczące prywatności.</h3><br>
         <h3><a href="">Film instruktażowy „Jak korzystać ze strony Zadebatuj.pl”</a></h3><br>
+        <h3>
+            <a href="https://drive.google.com/file/d/18iK-S7i1Op4DQCIYAZzBr0AE_GBtoNbY/view?fbclid=IwAR3qtcAL58zCzoqyfGnrGsNZccYj27HtKYWHRjDAx8AHPJUaD5J7vv0DVQo"
+               target="_blank">Karta
+                Oceny</a></h3><br>
+
     </div>
     <div id="ocena" class="instruction-text-two">
         <h1>Format 1 vs 1</h1>
@@ -228,42 +234,49 @@
         <h3>6 - 8 Wykazanie nieprawidłowości w najważniejszych argumentach przeciwnika, zbudowanie argumentów
             kontrujących jego twierdzenia. Celna i skuteczna kontrargumentacja.</h3><br>
         <br><br>
-        <button class="modal-button" data-modal-target="#modal">Sposób oceniania</button>
-        <div id="modal" class="modal">
-            <div class="modal-header">
-                <div class="title">Format debat</div>
-                <button data-close-button class="close-button">&times;</button>
+        <button class="modal-button" id="box1">Sposób oceniania</button>
+        <div id="popupBoxOnePosition">
+            <div class="popupBoxWrapper">
+                <div class="popupBoxContent">
+                    <h3>Sposób oceniania</h3>
+                    <img src="img/karta.png" alt="">
+                    <button id="closebox1"> Zamknij</button>
+                </div>
             </div>
-            <div class="modal-body">
-                <img src="img/karta.png" alt="">
-            </div>
-        </div id="modal">
-        <h3><a href="">Link z przykładowymi tematami debat</a></h3>
+        </div>
+        <h3><a href="http://hellomotions.com/?fbclid=IwAR3cRWgOodJCd-jH0E3reuDvDXhf_3dGbZKUIvhQ1erEZ2ZVGX8-mCbJjeE"
+               target="_blank">Link z przykładowymi tematami debat</a></h3>
     </div>
     <div id="regulamin" class="instruction-text-two">
         <h1>Regulamin</h1>
     </div>
     <div class="instruction-content-two">
 
-    <h3>1. Użytkownik tworząc konto zobowiązuje się do podawania tylko prawdziwych danych osobowych</h3><br>
-    <h3>2. zabronione jest nagrywanie całości lub fragmentów debat organizowanych w ramach platformy zadebatuj.pl przez
-        osoby inne niż sędziowie</h3><br>
-    <h3>3. Użytkownik, który deklaruje chęć wzięcia udziału w debacie w danym terminie, jest zobowiązany do
-        poinformowania organizatorów najpóźniej 24 godziny przed startem debaty o ewentualnej niedyspozycji lub
-        problemach z udziałem w wydarzeniu.</h3><br>
-    <p>Informujemy, że Administratorem Państwa danych osobowych jest Krakowskie Stowarzyszenie Mówców z siedzibą w
-        Krakowie przy ul. Nawojki 6/150, 30-072; KRS: 0000607741 (dalej: Administrator). Zakres zbieranych danych
-        osobowych: Dane osobowe zbierane przez Administratora to imię i nazwisko, dane kontaktowe (adres e-mail). Cel i
-        podstawa prawna przetwarzania danych osobowych: Państwa dane osobowe zawarte w niniejszym formularzu będą
-        przetwarzane na podstawie zgody, o której mowa w art. 6 ust. 1 lit. a) Rozporządzenia Parlamentu Europejskiego i
-        Rady (UE) 2016/679 (dalej: Rozporządzenie), w celu uwzględnienia Państwa osoby w procesie organizacji i
-        przeprowadzania i dokumentacji debat online. Macie Państwo prawo dostępu do treści swoich danych osobowych oraz
-        otrzymania kopii tych danych, a także prawo żądania ich poprawiania, usunięcia, ograniczenia przetwarzania,
-        wniesienia sprzeciwu wobec przetwarzania, jak również przenoszenia danych. Realizacja żądania usunięcia danych
-        jest równoznaczne z rezygnacją z udziału w procesie organizacji, przeprowadzania i dokumentacji debat. W
-        przypadku chęci realizacji powyższych praw, prosimy o kontakt drogą elektroniczną na adres e-mail
-        kontakt@ksmowcow.pl Jednocześnie informujemy, że przysługuje Państwu prawo wniesienia skargi do Prezesa Urzędu
-        Ochrony Danych Osobowych (PUODO) z siedzibą w Warszawie, ul. Stawki 2.</p>
+        <h3>1. Użytkownik tworząc konto zobowiązuje się do podawania tylko prawdziwych danych osobowych</h3><br>
+        <h3>2. zabronione jest nagrywanie całości lub fragmentów debat organizowanych w ramach platformy zadebatuj.pl
+            przez
+            osoby inne niż sędziowie</h3><br>
+        <h3>3. Użytkownik, który deklaruje chęć wzięcia udziału w debacie w danym terminie, jest zobowiązany do
+            poinformowania organizatorów najpóźniej 24 godziny przed startem debaty o ewentualnej niedyspozycji lub
+            problemach z udziałem w wydarzeniu.</h3><br>
+        <p>Informujemy, że Administratorem Państwa danych osobowych jest Krakowskie Stowarzyszenie Mówców z siedzibą w
+            Krakowie przy ul. Nawojki 6/150, 30-072; KRS: 0000607741 (dalej: Administrator). Zakres zbieranych danych
+            osobowych: Dane osobowe zbierane przez Administratora to imię i nazwisko, dane kontaktowe (adres e-mail).
+            Cel i
+            podstawa prawna przetwarzania danych osobowych: Państwa dane osobowe zawarte w niniejszym formularzu będą
+            przetwarzane na podstawie zgody, o której mowa w art. 6 ust. 1 lit. a) Rozporządzenia Parlamentu
+            Europejskiego i
+            Rady (UE) 2016/679 (dalej: Rozporządzenie), w celu uwzględnienia Państwa osoby w procesie organizacji i
+            przeprowadzania i dokumentacji debat online. Macie Państwo prawo dostępu do treści swoich danych osobowych
+            oraz
+            otrzymania kopii tych danych, a także prawo żądania ich poprawiania, usunięcia, ograniczenia przetwarzania,
+            wniesienia sprzeciwu wobec przetwarzania, jak również przenoszenia danych. Realizacja żądania usunięcia
+            danych
+            jest równoznaczne z rezygnacją z udziału w procesie organizacji, przeprowadzania i dokumentacji debat. W
+            przypadku chęci realizacji powyższych praw, prosimy o kontakt drogą elektroniczną na adres e-mail
+            kontakt@ksmowcow.pl Jednocześnie informujemy, że przysługuje Państwu prawo wniesienia skargi do Prezesa
+            Urzędu
+            Ochrony Danych Osobowych (PUODO) z siedzibą w Warszawie, ul. Stawki 2.</p>
     </div>
 </section>
 <footer class="main-footer">
