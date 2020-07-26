@@ -1,0 +1,118 @@
+@media screen and (max-width: 1200px)  {
+    .instruction-main .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .instruction-main .cards .card{
+        width: 1000px;
+        margin-bottom: 10px;
+    }
+    .instruction-main .cards .card h2 a{
+        font-size: 50px;
+    }
+    .instruction-text, .instruction-text-two{
+        font-size: 30px;
+    }
+    .instruction-content-two h3, .instruction-content h3{
+        font-size: 15px;
+    }
+    .instruction-link{
+        color: black;
+        font-size: 20px;
+        background-color: rgba(0,0,0, 0.3);
+    }
+}
+@media screen and (max-width: 860px){
+    .instruction-main .cards .card{
+        width: 500px;
+        margin-bottom: 20px;
+    }
+    .instruction-main .cards .card h2 a{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 620px) {
+    .instruction-main .cards .card{
+        width: 400px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    .instruction-text, .instruction-text-two{
+        font-size: 20px;
+    }
+    .instruction-content-two h3, .instruction-content h3{
+        font-size: 12px;
+    }
+    .instruction-link{
+        color: black;
+        font-size: 15px;
+        background-color: rgba(0,0,0, 0.3);
+    }
+    .instruction-content-two p{
+        font-size: 8px;
+    }
+    .modal{
+        width: 400px;
+    }
+    .modal-body img{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 415px){
+    .instruction-main h1{
+        margin-bottom: 20px;
+    }
+    .instruction-main .cards .card{
+        width: 350px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    .instruction-text, .instruction-text-two{
+        font-size: 16px;
+    }
+    .modal{
+        width: 350px;
+    }
+    .modal-body img{
+        width: 350px;
+    }
+}
+@media screen and (max-width: 380px){
+    .instruction-text, .instruction-text-two{
+        font-size: 14px;
+    }
+    .instruction-content-two h3, .instruction-content h3{
+        font-size: 10px;
+    }
+    .instruction-link{
+        color: black;
+        font-size: 12px;
+        background-color: rgba(0,0,0, 0.3);
+    }
+}
+@media screen and (max-width: 325px){
+    .instruction-main .cards .card{
+        width: 280px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    .instruction-main .cards .card h2 a{
+        font-size: 25px;
+    }
+    .instruction-main h1{
+        font-size: 30px;
+    }
+    .instruction-text, .instruction-text-two{
+        font-size: 14px;
+    }
+    .instruction-content-two h3, .instruction-content h3{
+        font-size: 8px;
+    }
+    .modal{
+        width: 280px;
+    }
+    .modal-body img{
+        width: 280px;
+    }
+}
